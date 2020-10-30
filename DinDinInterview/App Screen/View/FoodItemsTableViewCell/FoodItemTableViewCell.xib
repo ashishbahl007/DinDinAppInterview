@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="foodCell" id="KGk-i7-Jjw" customClass="FoodItemTableViewCell" customModule="DinDinInterview" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="390"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="390"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LdV-de-h0e">
+                        <rect key="frame" x="20" y="20" width="335" height="350"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NSH-gP-BhY">
+                                <rect key="frame" x="0.0" y="0.0" width="335" height="350"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pizza" translatesAutoresizingMaskIntoConstraints="NO" id="GUa-Ao-6ek">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="350"/>
+                                    </imageView>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oXt-OM-XSE">
+                                        <rect key="frame" x="0.0" y="300" width="335" height="50"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="881-cB-Ap6">
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1dl-lZ-qvv">
+                                                    <rect key="frame" x="15" y="0.0" width="305" height="50"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Cury" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mO2-dv-cQi">
+                                                            <rect key="frame" x="0.0" y="0.0" width="101.5" height="50"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHt-nX-b7g" customClass="GMStepper" customModule="GMStepper">
+                                                            <rect key="frame" x="101.5" y="0.0" width="102" height="50"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="buttonsTextColor">
+                                                                    <color key="value" red="0.95294117649999999" green="0.77647058820000003" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="buttonsBackgroundColor">
+                                                                    <color key="value" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="labelTextColor">
+                                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="labelBackgroundColor">
+                                                                    <color key="value" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$4.99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fr1-aO-j6c">
+                                                            <rect key="frame" x="203.5" y="0.0" width="101.5" height="50"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="1dl-lZ-qvv" secondAttribute="bottom" id="1Lr-ct-sKX"/>
+                                                <constraint firstItem="1dl-lZ-qvv" firstAttribute="top" secondItem="881-cB-Ap6" secondAttribute="top" id="Kil-Jn-eMU"/>
+                                                <constraint firstAttribute="trailing" secondItem="1dl-lZ-qvv" secondAttribute="trailing" constant="15" id="sgf-LD-XSo"/>
+                                                <constraint firstItem="1dl-lZ-qvv" firstAttribute="leading" secondItem="881-cB-Ap6" secondAttribute="leading" constant="15" id="yOq-hM-RyV"/>
+                                            </constraints>
+                                        </view>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.77647058820000003" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="G3q-TZ-aOv"/>
+                                        </constraints>
+                                        <blurEffect style="regular"/>
+                                    </visualEffectView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="oXt-OM-XSE" secondAttribute="trailing" id="Mzr-Qx-mXf"/>
+                                    <constraint firstItem="GUa-Ao-6ek" firstAttribute="leading" secondItem="NSH-gP-BhY" secondAttribute="leading" id="Pnz-NK-9XV"/>
+                                    <constraint firstItem="oXt-OM-XSE" firstAttribute="leading" secondItem="NSH-gP-BhY" secondAttribute="leading" id="Yak-UI-OTq"/>
+                                    <constraint firstAttribute="bottom" secondItem="GUa-Ao-6ek" secondAttribute="bottom" id="knI-8O-mec"/>
+                                    <constraint firstItem="GUa-Ao-6ek" firstAttribute="top" secondItem="NSH-gP-BhY" secondAttribute="top" id="psY-a6-LyG"/>
+                                    <constraint firstAttribute="bottom" secondItem="oXt-OM-XSE" secondAttribute="bottom" id="ue0-FM-hv5"/>
+                                    <constraint firstAttribute="trailing" secondItem="GUa-Ao-6ek" secondAttribute="trailing" id="zHN-fO-gpf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="NSH-gP-BhY" secondAttribute="trailing" id="IKS-Rv-oHw"/>
+                            <constraint firstItem="NSH-gP-BhY" firstAttribute="top" secondItem="LdV-de-h0e" secondAttribute="top" id="Tpw-fh-hQK"/>
+                            <constraint firstAttribute="bottom" secondItem="NSH-gP-BhY" secondAttribute="bottom" id="b9p-5t-iJK"/>
+                            <constraint firstItem="NSH-gP-BhY" firstAttribute="leading" secondItem="LdV-de-h0e" secondAttribute="leading" id="p4J-y4-1OQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LdV-de-h0e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="BG5-oG-Bvy"/>
+                    <constraint firstItem="LdV-de-h0e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Lnk-cW-QZu"/>
+                    <constraint firstAttribute="bottom" secondItem="LdV-de-h0e" secondAttribute="bottom" constant="20" id="oOY-AV-mLx"/>
+                    <constraint firstAttribute="trailing" secondItem="LdV-de-h0e" secondAttribute="trailing" constant="20" id="yLp-AP-zch"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="amountLabel" destination="Fr1-aO-j6c" id="qi2-PD-1xZ"/>
+                <outlet property="foodDetailsStackView" destination="1dl-lZ-qvv" id="pGs-ng-yPz"/>
+                <outlet property="foodDetailsView" destination="881-cB-Ap6" id="avP-LW-SoA"/>
+                <outlet property="foodItemImageView" destination="GUa-Ao-6ek" id="QSf-gw-p9M"/>
+                <outlet property="foodTitleLabel" destination="mO2-dv-cQi" id="mfe-Gw-7o6"/>
+                <outlet property="increaseDecreaseStepper" destination="eHt-nX-b7g" id="f3i-5Y-DDA"/>
+                <outlet property="innerView" destination="NSH-gP-BhY" id="qXw-qT-GGo"/>
+                <outlet property="outerView" destination="LdV-de-h0e" id="D4Y-Ua-xZP"/>
+            </connections>
+            <point key="canvasLocation" x="138.40579710144928" y="132.58928571428572"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Pizza" width="626" height="626"/>
+    </resources>
+</document>
